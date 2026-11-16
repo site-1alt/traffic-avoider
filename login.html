@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hee Hee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="heading" style="margin-bottom:690px; color:white; margin-left:100px; margin-top:80px;z-index:2002; font-size:50px;"> Traffic Avoider</h1>
+    <div class="gridbg" id="gridbackground"> </div>
+    <div class="arcadecont" >
+        <img src="arcademachine.png" class="'arcadeimg">
+    </div>
+    <div class="coincont">
+        <img src="coin.png" class="coinimg">
+        <div class="toggle">
+            <button onclick="showlogin()">Login</button>
+            <button onclick="showsignup()">Sign-Up</button>
+            
+        </div>
+        <form id="login">
+            <h2 class="loginhdr">LOGIN</h2>
+            <input type="username" placeholder="username" id ="loginuser" required>
+            <input type="password" placeholder="Password" id="loginpass" required>
+            <br>
+            <br>
+            <button type="login"><Img src="login-removebg-preview.png" class="loginbtn"></button>
+                <p class="switchtxt">Don't Have An Account?<span onclick=showsignup()>SignUp</span></p>
+        </form>
+        <form id="sign">
+            <h2 class="signhdr">SIGN-UP</h2>
+            <input type="username" placeholder="username" id="signuser" required>
+            <input type="password" placeholder="Password" id="signpass" required>
+            <br>
+            <br>
+            <button type="signup"><Img src="image-removebg-preview (3).png" class="signbtn"></button>
+            <p class="switchtxt">Already Have An Account?<span onclick=showlogin()>Login</span></p>
+                
+            </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
